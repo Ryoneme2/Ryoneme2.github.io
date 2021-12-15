@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/public/css/main.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Home Page</title>
+  </head>
+  <body>
+    <header>
+      <div class="menu-btn opaInactive">
+        <img src="https://img.icons8.com/nolan/256/menu.png" />
+      </div>
+
+      <div class="side-bar flex-column justify-content-between">
+        <div>
+          <div
+            class="item-sidebar align-items-center"
+            onclick="ScrollToTarget('sec1')"
+          >
+            <svg
+              class="sidebar-icon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+              ></path>
+            </svg>
+            <a href="javascript:void(0)">Home</a>
+          </div>
+          <div
+            class="item-sidebar align-items-center"
+            onclick="ScrollToTarget('sec2')"
+          >
+            <svg
+              class="sidebar-icon"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"
+              ></path>
+            </svg>
+            <a href="javascript:void(0)">Personal</a>
+          </div>
+          <div
+            class="item-sidebar align-items-center"
+            onclick="ScrollToTarget('sec3')"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="sidebar-icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path d="M12 14l9-5-9-5-9 5 9 5z" />
+              <path
+                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+              />
+            </svg>
+            <a href="javascript:void(0)">Education</a>
+          </div>
+          <div
+            class="item-sidebar align-items-center"
+            onclick="ScrollToTarget('sec4')"
+          >
+            <svg
+              class="sidebar-icon"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <a href="javascript:void(0)">Skill & Experience</a>
+          </div>
+          <div
+            class="item-sidebar align-items-center"
+            onclick="ScrollToTarget('sec5')"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="sidebar-icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              />
+            </svg>
+            <a href="javascript:void(0)">Work Experience</a>
+          </div>
+        </div>
+        <div>
+          <div class="item-sidebar-close align-items-center">
+            <svg
+              class="sidebar-icon"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M15.707 15.707a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 010 1.414zm-6 0a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 011.414 1.414L5.414 10l4.293 4.293a1 1 0 010 1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <a href="javascript:void(0)">Close</a>
+          </div>
+        </div>
+      </div>
+
+      <nav class="self-navbar">
+        <div class="d-flex justify-content-between align-items-center nav-bar">
+          <!-- logo -->
+          <!-- <div class="logo-head py-3 d-flex align-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="sidebar-icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 10V3L4 14h7v7l9-11h-7z"
+              />
+            </svg>
+            <h2>Jame Tirakarn</h2>
+          </div> -->
+          <!-- navcontent -->
+          <div class="nav-content py-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="sidebar-icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 10V3L4 14h7v7l9-11h-7z"
+              />
+            </svg>
+            <a href="#">Home</a>
+            <a href="/public/page/about.html">About</a>
+            <a href="/public/page/gallery.html">Gallery</a>
+            <a href="mailto:worknarair6@gmail.com">Contacts</a>
+          </div>
+          <!-- socialmedia -->
+          <div class="socialmedia">
+            <a href="https://facebook.com/minrer" target="_blank">
+              <img
+                class="sidebar-icon"
+                src="https://img.icons8.com/nolan/128/facebook-new.png" /></a
+            ><a href="https://www.instagram.com/_jmtrkkk/" target="_blank">
+              <img
+                class="sidebar-icon"
+                src="https://img.icons8.com/nolan/128/instagram-new.png" /></a
+            ><a href="https://twitter.com/NunraiG" target="_blank">
+              <img
+                class="sidebar-icon"
+                src="https://img.icons8.com/nolan/128/twitter.png"
+            /></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="container-fulid py-5 bg-color-sec1">
+      <div class="container d-flex header-content my-3" id="sec1">
+        <div class="featured-content">
+          <h1 class="text-glow">TIRAKARN</h1>
+          <h1 class="text-glow">MAIWONG</h1>
+          <h2>Developer.</h2>
+        </div>
+        <div class="featured-img">
+          <img src="/public/image/_MG_0066.jpg" alt="" />
+        </div>
+      </div>
+      <br />
+      <br />
+      <div class="container my-5" id="sec2">
+        <div class="row box-content-info">
+          <div
+            class="col-lg-8 col-sm-12"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="box-info">
+              <h4 class="py-3 mb-2 mx-3">Informations</h4>
+              <hr style="width: 100%; color: #413f53; margin: 0 auto 0 auto" />
+              <div class="row">
+                <div class="col-6 py-3">
+                  <ul class="info-content">
+                    <li data-aos="fade-down" data-aos-duration="1150">
+                      FULLNAME : Tirakarn Maiwong
+                    </li>
+                    <li data-aos="fade-down" data-aos-duration="1100">
+                      NICKNAME : Jame
+                    </li>
+                    <li data-aos="fade-down" data-aos-duration="1150">
+                      AGE : 19
+                    </li>
+                    <li data-aos="fade-down" data-aos-duration="1200">
+                      BIRTHDATE : 02/02/2002
+                    </li>
+                    <li data-aos="fade-down" data-aos-duration="1250">
+                      GENDER : Male
+                    </li>
+                    <li data-aos="fade-down" data-aos-duration="1300">
+                      HEIGHT : 174 cm
+                    </li>
+                    <li data-aos="fade-down" data-aos-duration="1350">
+                      WEIGHT : 60 kg
+                    </li>
+                    <li data-aos="fade-down" data-aos-duration="1400">
+                      RELIGTION : None
+                    </li>
+                    <li data-aos="fade-down" data-aos-duration="1450">
+                      COUNTRY : THAILAND
+                    </li>
+                    <li data-aos="fade-down" data-aos-duration="1500">
+                      UNIVERSITY : Chiangmai university
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-6 py-3">
+                  <ul class="info-content">
+                    <li data-aos="fade-down" data-aos-duration="1150">
+                      PHONE : 063-123-6001
+                    </li>
+                    <li data-aos="fade-down" data-aos-duration="1200">
+                      E-MAIL : worknarair6@gmail.com
+                    </li>
+                    <li data-aos="fade-down" data-aos-duration="1250">
+                      FACEBOOK : Jame Tirakarn
+                    </li>
+                    <li data-aos="fade-down" data-aos-duration="1300">
+                      INSTAGRAM : _jmtrkkk
+                    </li>
+                    <li data-aos="fade-down" data-aos-duration="1350">
+                      GITHUB : ryoneme2
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-sm-12 info2-content"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            <h1>PERSONAL INFORMATIONS</h1>
+            <p>
+              There is rarely nothing spacial than each other friend just only
+              the brave and hardworking that follow my concept is "everything
+              from you do"
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container my-5" id="sec3">
+        <div class="educate my-5">
+          <h1 data-aos="fade-down">EDUCATION</h1>
+
+          <div class="timeline">
+            <article data-aos="fade-down">
+              <h4>Kindergarten</h4>
+              <p>2006 - 2007 Thamakeng school</p>
+            </article>
+            <article data-aos="fade-up">
+              <h4>Elementary education</h4>
+              <p>2007 - 2008 Thamakeng school</p>
+              <p>2008 - 2015 Rangseevitaya School</p>
+            </article>
+            <article data-aos="fade-down">
+              <h4>High School</h4>
+              <p>2015 - 2021 Rangseevitaya School</p>
+            </article>
+            <article data-aos="fade-up">
+              <h4>Bachelor's degree</h4>
+              <p>2021 - Present Chiangmai university</p>
+            </article>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="sec4">
+        <div class="row skill d-flex align-items-center">
+          <div class="col-lg-4 col-sm-12">
+            <div class="info2-content" data-aos="fade-up">
+              <h1>Skill or Deftness</h1>
+              <p>
+                The skill and experience from hardworking and learning all the
+                time. Learning is never stop no matter what reason.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <div class="row d-flex justify-content-evenly align-items-center">
+              <div
+                class="col-4 box-skill"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+              >
+                <img src="https://img.icons8.com/nolan/256/html.png" />
+                <p><span class="text-gradient">HTML</span></p>
+              </div>
+              <div
+                class="col-md-4 col-sm-12 box-skill"
+                data-aos="fade-down"
+                data-aos-duration="1400"
+              >
+                <img src="https://img.icons8.com/nolan/256/css-filetype.png" />
+                <p><span class="text-gradient">CSS</span></p>
+              </div>
+              <div
+                class="col-md-4 col-sm-12 box-skill"
+                data-aos="fade-down"
+                data-aos-duration="1800"
+              >
+                <img src="https://img.icons8.com/nolan/256/javascript.png" />
+                <p><span class="text-gradient">JAVASCRIPT</span></p>
+              </div>
+            </div>
+            <div
+              class="row mt-5 d-flex justify-content-evenly align-items-center"
+            >
+              <div
+                class="col-md-4 col-sm-12 box-skill"
+                data-aos="fade-up"
+                data-aos-duration="1800"
+              >
+                <img src="https://img.icons8.com/nolan/256/python.png" />
+                <p><span class="text-gradient">PYTHON</span></p>
+              </div>
+              <div
+                class="col-md-4 col-sm-12 box-skill"
+                data-aos="fade-up"
+                data-aos-duration="1800"
+              >
+                <img src="https://img.icons8.com/nolan/256/react-native.png" />
+                <p><span class="text-gradient">REACT</span></p>
+              </div>
+              <div
+                class="col-md-4 col-sm-12 box-skill"
+                data-aos="fade-up"
+                data-aos-duration="1800"
+              >
+                <img src="https://img.icons8.com/nolan/256/docker.png" />
+                <p><span class="text-gradient">DOCKER</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="svg-path">
+      <svg
+        id="visual"
+        viewBox="0 0 1920 500"
+        width="1920"
+        height="500"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        version="1.1"
+      >
+        <rect x="0" y="0" width="1920" height="500" fill="#161325"></rect>
+        <path
+          d="M0 299L45.7 294C91.3 289 182.7 279 274.2 278.8C365.7 278.7 457.3 288.3 548.8 277C640.3 265.7 731.7 233.3 823 209.3C914.3 185.3 1005.7 169.7 1097 173.7C1188.3 177.7 1279.7 201.3 1371.2 224.7C1462.7 248 1554.3 271 1645.8 258.8C1737.3 246.7 1828.7 199.3 1874.3 175.7L1920 152L1920 501L1874.3 501C1828.7 501 1737.3 501 1645.8 501C1554.3 501 1462.7 501 1371.2 501C1279.7 501 1188.3 501 1097 501C1005.7 501 914.3 501 823 501C731.7 501 640.3 501 548.8 501C457.3 501 365.7 501 274.2 501C182.7 501 91.3 501 45.7 501L0 501Z"
+          fill="#a9bdff"
+        ></path>
+        <path
+          d="M0 276L45.7 280.7C91.3 285.3 182.7 294.7 274.2 301.5C365.7 308.3 457.3 312.7 548.8 323.3C640.3 334 731.7 351 823 358.7C914.3 366.3 1005.7 364.7 1097 344.3C1188.3 324 1279.7 285 1371.2 264.8C1462.7 244.7 1554.3 243.3 1645.8 242.2C1737.3 241 1828.7 240 1874.3 239.5L1920 239L1920 501L1874.3 501C1828.7 501 1737.3 501 1645.8 501C1554.3 501 1462.7 501 1371.2 501C1279.7 501 1188.3 501 1097 501C1005.7 501 914.3 501 823 501C731.7 501 640.3 501 548.8 501C457.3 501 365.7 501 274.2 501C182.7 501 91.3 501 45.7 501L0 501Z"
+          fill="#d6ddff"
+        ></path>
+        <path
+          d="M0 362L45.7 371.8C91.3 381.7 182.7 401.3 274.2 412C365.7 422.7 457.3 424.3 548.8 421C640.3 417.7 731.7 409.3 823 396.7C914.3 384 1005.7 367 1097 362.7C1188.3 358.3 1279.7 366.7 1371.2 373.2C1462.7 379.7 1554.3 384.3 1645.8 394.5C1737.3 404.7 1828.7 420.3 1874.3 428.2L1920 436L1920 501L1874.3 501C1828.7 501 1737.3 501 1645.8 501C1554.3 501 1462.7 501 1371.2 501C1279.7 501 1188.3 501 1097 501C1005.7 501 914.3 501 823 501C731.7 501 640.3 501 548.8 501C457.3 501 365.7 501 274.2 501C182.7 501 91.3 501 45.7 501L0 501Z"
+          fill="#ffffff"
+        ></path>
+      </svg>
+    </div>
+
+    <section>
+      <div class="container performance my-5" id="sec5">
+        <h1>Track record & Work Experience</h1>
+
+        <div class="row my-5 d-flex align-items-center">
+          <div class="col-lg-5 col-sm-12" data-aos="fade-up">
+            <h2>Web Landing page Tcas65 of Agriculture</h2>
+            <p>
+              visit website :
+              <a
+                href="https://www.agri.cmu.ac.th/smart_academic/webs/indextcas#0"
+                >Click Here</a
+              >
+            </p>
+          </div>
+          <div class="col-lg-7 col-sm-12 img-perfor" data-aos="fade-down">
+            <img
+              src="/public/image/E231A5ED-697F-41D2-9440-C96922C8E96E.jpeg   "
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="row my-5 d-flex align-items-center">
+          <div class="col-lg-7 col-sm-12 img-perfor" data-aos="fade-up">
+            <img
+              src="/public/image/8D26B0BA-49D1-420A-B746-8755112008EE.jpeg"
+              alt=""
+            />
+          </div>
+          <div class="col-lg-5 col-sm-12" data-aos="fade-down">
+            <h2>Web Landing page of Agriculture First year (1st year)</h2>
+            <p>This website dose not public yet ;-;</p>
+          </div>
+          <!-- <h2 class="my-5">And more coming soon~~</h2> -->
+        </div>
+      </div>
+    </section>
+    <div class="svg-path">
+      <svg
+        id="visual"
+        viewBox="0 0 1920 500"
+        width="1920"
+        height="500"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        version="1.1"
+      >
+        <rect x="0" y="0" width="1920" height="500" fill="#fff"></rect>
+        <path
+          d="M0 291L45.7 286C91.3 281 182.7 271 274.2 260.2C365.7 249.3 457.3 237.7 548.8 232.7C640.3 227.7 731.7 229.3 823 218.3C914.3 207.3 1005.7 183.7 1097 191.3C1188.3 199 1279.7 238 1371.2 240.3C1462.7 242.7 1554.3 208.3 1645.8 206.7C1737.3 205 1828.7 236 1874.3 251.5L1920 267L1920 501L1874.3 501C1828.7 501 1737.3 501 1645.8 501C1554.3 501 1462.7 501 1371.2 501C1279.7 501 1188.3 501 1097 501C1005.7 501 914.3 501 823 501C731.7 501 640.3 501 548.8 501C457.3 501 365.7 501 274.2 501C182.7 501 91.3 501 45.7 501L0 501Z"
+          fill="#eef2ff"
+        ></path>
+        <path
+          d="M0 272L45.7 275C91.3 278 182.7 284 274.2 294.5C365.7 305 457.3 320 548.8 325.3C640.3 330.7 731.7 326.3 823 312.8C914.3 299.3 1005.7 276.7 1097 264.3C1188.3 252 1279.7 250 1371.2 262.7C1462.7 275.3 1554.3 302.7 1645.8 305.3C1737.3 308 1828.7 286 1874.3 275L1920 264L1920 501L1874.3 501C1828.7 501 1737.3 501 1645.8 501C1554.3 501 1462.7 501 1371.2 501C1279.7 501 1188.3 501 1097 501C1005.7 501 914.3 501 823 501C731.7 501 640.3 501 548.8 501C457.3 501 365.7 501 274.2 501C182.7 501 91.3 501 45.7 501L0 501Z"
+          fill="#f7f8ff"
+        ></path>
+        <path
+          d="M0 426L45.7 425.3C91.3 424.7 182.7 423.3 274.2 412.3C365.7 401.3 457.3 380.7 548.8 380.7C640.3 380.7 731.7 401.3 823 405.3C914.3 409.3 1005.7 396.7 1097 391.5C1188.3 386.3 1279.7 388.7 1371.2 383.3C1462.7 378 1554.3 365 1645.8 368.7C1737.3 372.3 1828.7 392.7 1874.3 402.8L1920 413L1920 501L1874.3 501C1828.7 501 1737.3 501 1645.8 501C1554.3 501 1462.7 501 1371.2 501C1279.7 501 1188.3 501 1097 501C1005.7 501 914.3 501 823 501C731.7 501 640.3 501 548.8 501C457.3 501 365.7 501 274.2 501C182.7 501 91.3 501 45.7 501L0 501Z"
+          fill="#ffffff"
+        ></path>
+      </svg>
+    </div>
+    <section>
+      <div class="logoo">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="sidebar-icon2"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M13 10V3L4 14h7v7l9-11h-7z"
+          />
+        </svg>
+      </div>
+      <div class="footer-nav">
+        <a href="#">Home</a>
+        <a href="/public/page/about.html">About</a>
+        <a href="mailto:worknarair6@gmail.com">Contact</a>
+      </div>
+      <div class="footer-content">
+        <a href="javascript:void(0)" onclick="ScrollToTarget('sec1')"
+          >Go to top</a
+        >
+        <a href="javascript:void(0)" onclick="ScrollToTarget('sec2')"
+          >Personal info</a
+        >
+        <a href="javascript:void(0)" onclick="ScrollToTarget('sec3')"
+          >Education</a
+        >
+        <a href="javascript:void(0)" onclick="ScrollToTarget('sec4')">Skills</a>
+        <a href="javascript:void(0)" onclick="ScrollToTarget('sec5')"
+          >Performance</a
+        >
+      </div>
+      <div class="social">
+        <a href="https://www.facebook.com/minrer" target="_blank">
+          <img
+            class="sidebar-icon"
+            src="https://img.icons8.com/nolan/128/facebook-new.png" /></a
+        ><a href="https://www.instagram.com/_jmtrkkk/" target="_blank">
+          <img
+            class="sidebar-icon"
+            src="https://img.icons8.com/nolan/128/instagram-new.png" /></a
+        ><a href="https://www.twitter.com/NunraiG" target="_blank">
+          <img
+            class="sidebar-icon"
+            src="https://img.icons8.com/nolan/128/twitter.png"
+        /></a>
+      </div>
+    </section>
+
+    <script src="/public/javascript/main.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
